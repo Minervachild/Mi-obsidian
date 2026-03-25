@@ -1,5 +1,12 @@
 # محمصة السَرَوي — ملف شامل
 
+## Ad References (Mar 25, 2026)
+- **Product photography prompt** — Nano Banana Pro JSON prompt for pro product shots
+  - Source: @des_ask https://x.com/des_ask/status/2020580067630358694
+  - Image saved: memory/alsarawe-product-ref.png
+  - Uses Gemini Nano Banana Pro with detailed JSON prompt structure
+  - Perfect for coffee product shots (bags, cups, equipment)
+
 ## المشروع
 - **الاسم:** محمصة السروي (من جبال السروات)
 - **المنصة:** زد (Zid) — dashboard.zid.sa/stores/61418
