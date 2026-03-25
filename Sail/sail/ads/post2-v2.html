@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1080px;background:#0A0A0A;font-family:'IBM Plex Sans Arabic',sans-serif;color:#fff;position:relative;overflow:hidden}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(16,185,129,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(16,185,129,0.04) 1px,transparent 1px);background-size:54px 54px}
+.glow{position:absolute;width:500px;height:500px;background:radial-gradient(circle,rgba(16,185,129,0.1) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%}
+.c{position:relative;z-index:2;display:flex;flex-direction:column;height:100%;padding:60px 70px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}
+.logo{font-size:22px;font-weight:700;letter-spacing:3px;color:rgba(255,255,255,0.35)}.logo span{color:#10B981}
+.num{font-size:14px;color:rgba(255,255,255,0.2);direction:ltr}
+.tagline{text-align:center;margin-bottom:35px}
+.tagline-text{display:inline-block;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);padding:10px 28px;border-radius:100px;font-size:18px;font-weight:600;color:#6EE7B7;letter-spacing:1px}
+.mid{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.h1{font-size:52px;font-weight:700;line-height:1.4;margin-bottom:16px}
+.h1 em{font-style:normal;color:#10B981}
+.desc{font-size:22px;color:rgba(255,255,255,0.5);line-height:1.7;max-width:700px;margin-bottom:35px}
+.mockup{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:20px 24px;display:flex;flex-direction:column;gap:10px;max-width:550px;width:100%;margin-bottom:30px}
+.msg{border-radius:12px;padding:12px 18px;font-size:17px;font-weight:600;width:fit-content;max-width:90%}
+.msg.user{background:rgba(37,211,102,0.15);color:#25D366;align-self:flex-end}
+.msg.bot{background:rgba(16,185,129,0.12);color:#6EE7B7;align-self:flex-start}
+.reports{display:flex;gap:14px;direction:rtl;width:100%;max-width:580px}
+.rcard{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:20px;flex:1;text-align:center}
+.rcard-val{font-size:32px;font-weight:700;color:#10B981;margin-bottom:4px}
+.rcard-lbl{font-size:13px;color:rgba(255,255,255,0.4)}
+.rcard-bar{height:4px;background:rgba(16,185,129,0.15);border-radius:2px;margin-top:10px;overflow:hidden}
+.rcard-fill{height:100%;border-radius:2px;background:#10B981}
+.bot-row{display:flex;align-items:center;gap:60px;padding:50px 70px;position:absolute;bottom:0;left:0;right:0}
+.cta{background:linear-gradient(135deg,#10B981,#059669);padding:16px 36px;border-radius:14px;font-size:20px;font-weight:700;box-shadow:0 0 30px rgba(16,185,129,0.2);white-space:nowrap}
+.url{font-size:15px;color:rgba(255,255,255,0.25);letter-spacing:1px;direction:ltr}
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="glow"></div>
+<div class="c">
+  <div class="top">
+    <div class="logo">سيل <span>|</span> SAIL</div>
+    <div class="num">02/03</div>
+  </div>
+  <div class="tagline"><div class="tagline-text">🤖 محاسب بجيبك — بدل ساعات؟ ثواني</div></div>
+  <div class="mid">
+    <div class="h1">تقاريرك بـ<em>سؤال واحد</em></div>
+    <div class="desc">اسأل وكيلك وهو يجاوب بالأرقام فوراً</div>
+    <div class="mockup">
+      <div class="msg user">كم مبيعاتي هالشهر؟</div>
+      <div class="msg bot">📊 مبيعات مارس: ٤٢٣,٠٠٠ ر.س (+١٨٪ عن فبراير)<br>أعلى عميل: شركة النور — ٨٥,٠٠٠ ر.س</div>
+    </div>
+    <div class="reports">
+      <div class="rcard">
+        <div class="rcard-val">٤٢٣K</div>
+        <div class="rcard-lbl">مبيعات الشهر</div>
+        <div class="rcard-bar"><div class="rcard-fill" style="width:78%"></div></div>
+      </div>
+      <div class="rcard">
+        <div class="rcard-val">+١٨٪</div>
+        <div class="rcard-lbl">نمو</div>
+        <div class="rcard-bar"><div class="rcard-fill" style="width:60%"></div></div>
+      </div>
+      <div class="rcard">
+        <div class="rcard-val">٩٧٪</div>
+        <div class="rcard-lbl">تحصيل</div>
+        <div class="rcard-bar"><div class="rcard-fill" style="width:97%"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bot-row">
+  <div class="cta">جرّب مجاناً</div>
+  <div class="url">sailsolutions.ai</div>
+</div>
+</body>
+</html>

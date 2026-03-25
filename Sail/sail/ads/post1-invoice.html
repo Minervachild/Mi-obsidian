@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1080px;background:#0A0A0A;font-family:'IBM Plex Sans Arabic',sans-serif;color:#fff;position:relative;overflow:hidden}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,0.04) 1px,transparent 1px);background-size:54px 54px}
+.glow{position:absolute;width:500px;height:500px;background:radial-gradient(circle,rgba(59,130,246,0.1) 0%,transparent 70%);top:60%;left:30%;transform:translate(-50%,-50%);border-radius:50%}
+.c{position:relative;z-index:2;display:flex;flex-direction:column;height:100%;padding:60px 70px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px}
+.logo{font-size:22px;font-weight:700;letter-spacing:3px;color:rgba(255,255,255,0.35)}.logo span{color:#3B82F6}
+.num{font-size:14px;color:rgba(255,255,255,0.2);direction:ltr}
+.mid{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.emoji{font-size:80px;margin-bottom:30px}
+.h1{font-size:54px;font-weight:700;line-height:1.4;margin-bottom:20px}
+.h1 em{font-style:normal;color:#3B82F6}
+.desc{font-size:24px;color:rgba(255,255,255,0.5);line-height:1.7;max-width:700px;margin-bottom:40px}
+.mockup{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:24px 30px;display:flex;align-items:center;gap:16px;direction:ltr;margin-bottom:0}
+.mockup-icon{font-size:32px}
+.mockup-chat{display:flex;flex-direction:column;gap:8px}
+.msg{background:rgba(37,211,102,0.15);border-radius:12px;padding:10px 16px;font-size:16px;color:#25D366;direction:rtl;font-weight:600}
+.reply{background:rgba(59,130,246,0.15);border-radius:12px;padding:10px 16px;font-size:16px;color:#93C5FD;direction:rtl}
+.bot{display:flex;flex-direction:column;gap:8px;padding:60px 70px;position:absolute;bottom:0;left:0;right:0}
+.cta-row{display:flex;justify-content:space-between;align-items:center}
+.cta{background:linear-gradient(135deg,#3B82F6,#2563EB);padding:16px 36px;border-radius:14px;font-size:20px;font-weight:700;box-shadow:0 0 30px rgba(59,130,246,0.2)}
+.url{font-size:15px;color:rgba(255,255,255,0.25);letter-spacing:1px;direction:ltr}
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="glow"></div>
+<div class="c">
+  <div class="top">
+    <div class="logo">سيل <span>|</span> SAIL</div>
+    <div class="num">01/03</div>
+  </div>
+  <div class="mid">
+    <div class="emoji">📸</div>
+    <div class="h1">صوّر الفاتورة<br><em>وخلّ الباقي علينا</em></div>
+    <div class="desc">ارسل صورة أو رسالة واتساب<br>والوكيل الذكي يسجلها بثواني في وافق أو قيود</div>
+    <div class="mockup">
+      <div class="mockup-icon">💬</div>
+      <div class="mockup-chat">
+        <div class="msg">📸 فاتورة مشتريات ١٢٠٠ ريال</div>
+        <div class="reply">✅ تم تسجيل الفاتورة — مشتريات ١٬٢٠٠ ر.س</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bot">
+  <div class="cta-row">
+    <div class="cta">جرّب مجاناً</div>
+    <div class="url">sailsolutions.ai</div>
+  </div>
+</div>
+</body>
+</html>

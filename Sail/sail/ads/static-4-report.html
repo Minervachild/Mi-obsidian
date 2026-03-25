@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1080px;font-family:'Tajawal',sans-serif;background:#0a0a0a;color:#fff;overflow:hidden;position:relative}
+.container{width:100%;height:100%;display:flex;flex-direction:column;padding:60px;justify-content:space-between}
+
+.headline{font-size:56px;font-weight:900;line-height:1.4}
+.headline span{color:#10B981}
+.sub{font-size:28px;color:#666;margin-top:8px}
+
+/* Full WhatsApp chat */
+.chat{background:#0b141a;border-radius:20px;padding:28px;border:1px solid #1a2a35;margin:30px 0;flex:1;display:flex;flex-direction:column;gap:14px}
+
+.msg-user{background:#005c4b;border-radius:14px;padding:14px 20px;font-size:24px;color:#e9edef;align-self:flex-end;max-width:70%}
+.msg-bot{background:#1f2c34;border-radius:14px;padding:14px 20px;font-size:22px;color:#e9edef;align-self:flex-start;max-width:85%}
+
+.report-card{background:#0b141a;border-radius:12px;padding:16px;margin-top:10px}
+.report-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #2a3942;font-size:20px}
+.report-row:last-child{border:none}
+.report-row .label{color:#888}
+.report-row .value{font-weight:700}
+.report-row .green{color:#10B981}
+.report-row .blue{color:#3B82F6}
+.report-row .red{color:#ef4444}
+
+.time{font-size:13px;color:#667781;margin-top:6px}
+
+/* Bottom */
+.bottom{display:flex;justify-content:space-between;align-items:flex-end}
+.cta-btn{background:#10B981;color:#fff;padding:16px 48px;border-radius:50px;font-size:26px;font-weight:700}
+.brand{font-size:22px;color:#444}
+.disclaimer{font-size:14px;color:#333;position:absolute;bottom:20px;left:60px}
+</style>
+</head>
+<body>
+<div class="container">
+  <div>
+    <div class="headline">كل أحد الصبح<br>تفتح واتساب<br>تلقى <span>تقريرك جاهز</span></div>
+  </div>
+
+  <div class="chat">
+    <div class="msg-user">أرسلي تقرير الأسبوع
+      <div class="time">٨:٠٠ ص ✓✓</div>
+    </div>
+    <div class="msg-bot">
+      📊 تقرير الأسبوع — ٩-١٦ مارس:
+      <div class="report-card">
+        <div class="report-row">
+          <span class="label">المبيعات</span>
+          <span class="value blue">٣٨٢٬٥٠٠ ر.س</span>
+        </div>
+        <div class="report-row">
+          <span class="label">النمو</span>
+          <span class="value green">+١٤٪ ↑</span>
+        </div>
+        <div class="report-row">
+          <span class="label">فواتير متأخرة</span>
+          <span class="value red">٣ (١٢٬٨٠٠ ر.س)</span>
+        </div>
+        <div class="report-row">
+          <span class="label">أعلى عميل</span>
+          <span class="value">مطعم الريف (٦٢K)</span>
+        </div>
+        <div class="report-row">
+          <span class="label">توصية</span>
+          <span class="value green">↑ ركّز على تحصيل المتأخرة</span>
+        </div>
+      </div>
+      <div class="time">٨:٠٠ ص</div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="cta-btn">جرب مجاناً</div>
+    <div class="brand">sailsolutions.ai</div>
+  </div>
+</div>
+<div class="disclaimer">*بيانات توضيحية | وكيل ذكاء اصطناعي</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080, height=1080">
+<title>Sail - Post 1: Invoice Photo</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1080px;background:#0A0A0A;font-family:'IBM Plex Sans Arabic',sans-serif;color:#fff;position:relative;overflow:hidden}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,0.04) 1px,transparent 1px);background-size:54px 54px}
+.glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(59,130,246,0.15) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%;animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:0.8}50%{opacity:1}}
+.c{position:relative;z-index:2;display:flex;flex-direction:column;height:100%;padding:55px 65px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+.logo{font-size:21px;font-weight:700;letter-spacing:3px;color:rgba(255,255,255,0.35)}.logo span{color:#3B82F6}
+.num{font-size:14px;color:rgba(255,255,255,0.2);direction:ltr}
+.tagline{text-align:center;margin-bottom:32px}
+.tagline-text{display:inline-block;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.25);padding:10px 26px;border-radius:100px;font-size:17px;font-weight:600;color:#93C5FD;letter-spacing:0.5px}
+.mid{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.benefit{font-size:48px;font-weight:700;line-height:1.35;margin-bottom:12px}
+.benefit em{font-style:normal;color:#3B82F6}
+.subtext{font-size:19px;color:rgba(255,255,255,0.45);line-height:1.6;max-width:680px;margin-bottom:28px}
+.body{font-size:21px;color:rgba(255,255,255,0.65);line-height:1.7;max-width:700px;margin-bottom:32px}
+.compare{display:flex;align-items:center;gap:24px;margin-bottom:32px}
+.compare-box{text-align:center;padding:18px 28px;border-radius:14px}
+.compare-box.old{background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.15)}
+.compare-box.new{background:rgba(59,130,246,0.08);border:1px solid rgba(59,130,246,0.15)}
+.compare-val{font-size:36px;font-weight:700}
+.old .compare-val{color:#EF4444;text-decoration:line-through;text-decoration-thickness:2px}
+.new .compare-val{color:#3B82F6}
+.compare-lbl{font-size:13px;color:rgba(255,255,255,0.4);margin-top:4px}
+.compare-arrow{font-size:32px;color:rgba(255,255,255,0.25)}
+.mockup{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:18px;padding:18px 22px;display:flex;flex-direction:column;gap:9px;max-width:540px;width:100%}
+.msg{border-radius:11px;padding:11px 17px;font-size:16px;font-weight:600;width:fit-content;max-width:88%}
+.msg.user{background:rgba(37,211,102,0.15);color:#25D366;align-self:flex-end}
+.msg.bot{background:rgba(59,130,246,0.12);color:#93C5FD;align-self:flex-start}
+.disclaimer{position:absolute;bottom:135px;left:0;right:0;text-align:center;font-size:11px;color:rgba(255,255,255,0.25);line-height:1.5}
+.bot-row{display:flex;align-items:center;gap:55px;padding:45px 65px;position:absolute;bottom:0;left:0;right:0}
+.cta{background:linear-gradient(135deg,#3B82F6,#2563EB);padding:15px 34px;border-radius:13px;font-size:19px;font-weight:700;box-shadow:0 0 28px rgba(59,130,246,0.25);white-space:nowrap}
+.url{font-size:14px;color:rgba(255,255,255,0.25);letter-spacing:1px;direction:ltr}
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="glow"></div>
+<div class="c">
+  <div class="top">
+    <div class="logo">سيل <span>|</span> SAIL</div>
+    <div class="num">01/06</div>
+  </div>
+  <div class="tagline"><div class="tagline-text">🤖 محاسب بجيبك — بدل ساعات؟ ثواني</div></div>
+  <div class="mid">
+    <div class="benefit">تبي تقفل فواتيرك<br><em>في دقايق؟</em></div>
+    <div class="subtext">كل محاسب يعرف — الإدخال اليدوي ياكل الوقت</div>
+    <div class="body">صوّر الفاتورة بواتساب<br>الوكيل يسجلها تلقائي في وافق أو قيود</div>
+    <div class="compare">
+      <div class="compare-box old">
+        <div class="compare-val">~٣٠ دقيقة</div>
+        <div class="compare-lbl">الطريقة القديمة</div>
+      </div>
+      <div class="compare-arrow">→</div>
+      <div class="compare-box new">
+        <div class="compare-val">دقايق</div>
+        <div class="compare-lbl">مع وكيل سيل</div>
+      </div>
+    </div>
+    <div class="mockup">
+      <div class="msg user">📸 فاتورة مشتريات — مكتب النور — ١٬١٨٠ ر.س</div>
+      <div class="msg bot">✅ تم التسجيل في وافق<br>📁 مشتريات — ١٬١٨٠ ر.س | 🏢 مكتب النور للقرطاسية</div>
+    </div>
+  </div>
+</div>
+<div class="disclaimer">*بيانات توضيحية | وكيل ذكاء اصطناعي</div>
+<div class="bot-row">
+  <div class="cta">جرب مجاناً — هالأسبوع بس</div>
+  <div class="url">sailsolutions.ai</div>
+</div>
+</body>
+</html>

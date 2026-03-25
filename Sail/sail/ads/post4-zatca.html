@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080, height=1080">
+<title>Sail - Post 4: ZATCA Compliance</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1080px;background:#0A0A0A;font-family:'IBM Plex Sans Arabic',sans-serif;color:#fff;position:relative;overflow:hidden}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(139,92,246,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,0.04) 1px,transparent 1px);background-size:54px 54px}
+.glow{position:absolute;width:520px;height:520px;background:radial-gradient(circle,rgba(139,92,246,0.15) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%;animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:0.8}50%{opacity:1}}
+.c{position:relative;z-index:2;display:flex;flex-direction:column;height:100%;padding:55px 65px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+.logo{font-size:21px;font-weight:700;letter-spacing:3px;color:rgba(255,255,255,0.35)}.logo span{color:#8B5CF6}
+.num{font-size:14px;color:rgba(255,255,255,0.2);direction:ltr}
+.tagline{text-align:center;margin-bottom:32px}
+.tagline-text{display:inline-block;background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.25);padding:10px 26px;border-radius:100px;font-size:17px;font-weight:600;color:#C4B5FD;letter-spacing:0.5px}
+.mid{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.benefit{font-size:44px;font-weight:700;line-height:1.35;margin-bottom:12px}
+.benefit em{font-style:normal;color:#8B5CF6}
+.subtext{font-size:18px;color:rgba(255,255,255,0.45);line-height:1.6;max-width:720px;margin-bottom:28px}
+.body{font-size:20px;color:rgba(255,255,255,0.65);line-height:1.7;max-width:720px;margin-bottom:28px}
+.checklist{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:22px 28px;max-width:600px;width:100%;margin-bottom:24px}
+.check-item{display:flex;align-items:center;gap:14px;padding:10px 0;font-size:18px;font-weight:600;color:rgba(255,255,255,0.85)}
+.check-item:not(:last-child){border-bottom:1px solid rgba(255,255,255,0.06)}
+.check-icon{font-size:20px;color:#8B5CF6}
+.warning{font-size:19px;color:#FCD34D;font-weight:600;margin-top:8px}
+.split{display:flex;gap:16px;max-width:600px;width:100%}
+.split-side{flex:1;background:rgba(255,255,255,0.04);border-radius:14px;padding:20px;text-align:center}
+.split-side.bad{border:1px solid rgba(239,68,68,0.2)}
+.split-side.good{border:1px solid rgba(139,92,246,0.2)}
+.split-icon{font-size:32px;margin-bottom:8px}
+.split-text{font-size:15px;color:rgba(255,255,255,0.65);line-height:1.5}
+.disclaimer{position:absolute;bottom:135px;left:0;right:0;text-align:center;font-size:10px;color:rgba(255,255,255,0.25);line-height:1.5;padding:0 80px}
+.bot-row{display:flex;align-items:center;gap:50px;padding:45px 65px;position:absolute;bottom:0;left:0;right:0}
+.cta{background:linear-gradient(135deg,#8B5CF6,#7C3AED);padding:15px 32px;border-radius:13px;font-size:18px;font-weight:700;box-shadow:0 0 28px rgba(139,92,246,0.25);white-space:nowrap}
+.url{font-size:14px;color:rgba(255,255,255,0.25);letter-spacing:1px;direction:ltr}
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="glow"></div>
+<div class="c">
+  <div class="top">
+    <div class="logo">سيل <span>|</span> SAIL</div>
+    <div class="num">04/06</div>
+  </div>
+  <div class="tagline"><div class="tagline-text">🤖 محاسب بجيبك — بدل ساعات؟ ثواني</div></div>
+  <div class="mid">
+    <div class="benefit">تبي تريح بالك من<br><em>متطلبات الزكاة والدخل؟</em></div>
+    <div class="subtext">كل صاحب منشأة خايف من الغرامات...<br>والفواتير الإلكترونية صارت إلزامية</div>
+    <div class="body">وكيلنا يتأكد من كل فاتورة قبل ما تطلع:</div>
+    <div class="checklist">
+      <div class="check-item"><span class="check-icon">✅</span> رقم تسلسلي صحيح</div>
+      <div class="check-item"><span class="check-icon">✅</span> رمز QR متوافق</div>
+      <div class="check-item"><span class="check-icon">✅</span> كل البيانات المطلوبة</div>
+    </div>
+    <div class="warning">غرامة واحدة تكلف أضعاف الاشتراك</div>
+  </div>
+</div>
+<div class="disclaimer">*متوافق مع متطلبات هيئة الزكاة والدخل والجمارك | *بيانات توضيحية | وكيل ذكاء اصطناعي</div>
+<div class="bot-row">
+  <div class="cta">احمِ منشأتك — جرب مجاناً هالأسبوع</div>
+  <div class="url">sailsolutions.ai</div>
+</div>
+</body>
+</html>

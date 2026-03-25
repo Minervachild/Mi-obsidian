@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+body { 
+  width: 1080px; height: 1080px; 
+  background: #0A0A0A;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+/* Grid background */
+.grid {
+  position: absolute; inset: 0;
+  background-image: 
+    linear-gradient(rgba(59,130,246,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,130,246,0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+/* Glow orb */
+.glow {
+  position: absolute;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(59,130,246,0.15) 0%, transparent 70%);
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.glow2 {
+  position: absolute;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(16,185,129,0.1) 0%, transparent 70%);
+  top: 30%; left: 70%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.content {
+  position: relative; z-index: 2;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  height: 100%; padding: 80px 60px;
+  text-align: center;
+}
+.logo {
+  font-size: 32px; font-weight: 700;
+  letter-spacing: 4px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 60px;
+}
+.logo span { color: #3B82F6; }
+.headline {
+  font-size: 52px; font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #fff 0%, #93C5FD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subtext {
+  font-size: 28px; font-weight: 400;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.6;
+  margin-bottom: 50px;
+  max-width: 800px;
+}
+.stats {
+  display: flex; gap: 60px;
+  margin-bottom: 60px;
+}
+.stat {
+  text-align: center;
+}
+.stat-number {
+  font-size: 48px; font-weight: 700;
+  color: #3B82F6;
+}
+.stat-label {
+  font-size: 16px;
+  color: rgba(255,255,255,0.4);
+  margin-top: 4px;
+}
+.cta {
+  background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+  padding: 20px 50px;
+  border-radius: 16px;
+  font-size: 24px; font-weight: 700;
+  margin-bottom: 20px;
+  box-shadow: 0 0 40px rgba(59,130,246,0.3);
+}
+.url {
+  font-size: 18px;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 2px;
+  direction: ltr;
+}
+/* Decorative nodes */
+.node {
+  position: absolute;
+  width: 8px; height: 8px;
+  background: #3B82F6;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(59,130,246,0.5);
+}
+.node:nth-child(1) { top: 15%; left: 12%; }
+.node:nth-child(2) { top: 25%; right: 15%; width: 6px; height: 6px; background: #10B981; box-shadow: 0 0 15px rgba(16,185,129,0.5); }
+.node:nth-child(3) { bottom: 30%; left: 8%; width: 5px; height: 5px; }
+.node:nth-child(4) { bottom: 20%; right: 10%; width: 10px; height: 10px; background: #3B82F6; box-shadow: 0 0 25px rgba(59,130,246,0.6); }
+.node:nth-child(5) { top: 40%; left: 5%; width: 4px; height: 4px; background: #10B981; }
+.line {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, rgba(59,130,246,0.15), transparent);
+  height: 1px;
+}
+.line:nth-child(6) { top: 20%; left: 0; right: 0; }
+.line:nth-child(7) { top: 80%; left: 0; right: 0; }
+.line:nth-child(8) { top: 0; bottom: 0; left: 20%; width: 1px; height: 100%; background: linear-gradient(180deg, transparent, rgba(59,130,246,0.1), transparent); }
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="glow"></div>
+<div class="glow2"></div>
+<div class="node"></div><div class="node"></div><div class="node"></div><div class="node"></div><div class="node"></div>
+<div class="line"></div><div class="line"></div><div class="line"></div>
+<div class="content">
+  <div class="logo">سيل <span>|</span> SAIL</div>
+  <div class="headline">كم رسالة عميل<br>تضيع عليك كل يوم؟</div>
+  <div class="subtext">وكّل Agent ذكي يرد، يبيع، ويتابع<br>— وأنت نايم</div>
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-number">٢٤/٧</div>
+      <div class="stat-label">رد فوري</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">+٣٠٪</div>
+      <div class="stat-label">زيادة مبيعات</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">٤٨ ساعة</div>
+      <div class="stat-label">جاهز للعمل</div>
+    </div>
+  </div>
+  <div class="cta">احجز استشارتك المجانية</div>
+  <div class="url">sailsolutions.ai</div>
+</div>
+</body>
+</html>

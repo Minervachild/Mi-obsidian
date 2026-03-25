@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1080px;font-family:'Tajawal',sans-serif;background:#050510;color:#fff;overflow:hidden;position:relative}
+.container{width:100%;height:100%;display:flex;flex-direction:column;padding:60px;justify-content:space-between}
+
+.glow{position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(59,130,246,0.12) 0%,transparent 70%);pointer-events:none}
+
+.time-display{font-size:130px;font-weight:900;color:#3B82F6;text-align:center;letter-spacing:-4px}
+.time-label{font-size:26px;color:#444;text-align:center;margin-bottom:30px}
+
+.headline{font-size:46px;font-weight:800;text-align:center;line-height:1.5}
+.headline .dim{color:#444}
+
+.phone{background:#0b141a;border-radius:20px;padding:20px;max-width:620px;margin:24px auto;border:1px solid #1a2a35;box-shadow:0 0 60px rgba(59,130,246,0.08)}
+.wa-row{display:flex;gap:12px;align-items:flex-start}
+.wa-avatar{width:40px;height:40px;border-radius:50%;background:#3B82F6;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.wa-bubble{background:#1f2c34;border-radius:14px;padding:16px 20px;font-size:22px;color:#e9edef;flex:1}
+.wa-bubble .num{color:#3B82F6;font-weight:800;font-size:28px}
+
+/* STRONG CTA */
+.cta-section{text-align:center}
+.cta-headline{font-size:32px;font-weight:800;color:#fff;margin-bottom:16px}
+.cta-headline span{color:#3B82F6}
+.cta-btn{display:inline-block;background:#3B82F6;color:#fff;padding:20px 80px;border-radius:50px;font-size:32px;font-weight:800;margin-bottom:10px}
+.cta-sub{font-size:20px;color:#666}
+.brand{font-size:22px;color:#444;margin-top:6px}
+.disclaimer{font-size:13px;color:#333;position:absolute;bottom:14px;right:60px}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="container">
+  <div>
+    <div class="time-display">٢:٠٠</div>
+    <div class="time-label">الفجر</div>
+    <div class="headline">
+      ما تقدر تنام.<br>
+      <span class="dim">فاتح التطبيق تدور رقم.</span><br>
+      مو لاقيه.
+    </div>
+  </div>
+
+  <div class="phone">
+    <div class="wa-row">
+      <div class="wa-avatar">⚓</div>
+      <div class="wa-bubble">
+        كم الرصيد الحالي؟<br>
+        <div style="margin-top:8px">
+          💰 الرصيد: <span class="num">١٤٧٬٣٢٠ ر.س</span><br>
+          📊 فواتير متأخرة: ٣ (١٢٬٨٠٠ ر.س)<br>
+          ✅ مبيعات اليوم: ٨٬٤٥٠ ر.س
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <div class="cta-headline">أرقامك بـ<span>ثانية</span> — بأي وقت</div>
+    <div class="cta-btn">جرب مجاناً — هالأسبوع بس</div>
+    <div class="brand">sailsolutions.ai</div>
+  </div>
+</div>
+<div class="disclaimer">*بيانات توضيحية | وكيل ذكاء اصطناعي</div>
+</body>
+</html>

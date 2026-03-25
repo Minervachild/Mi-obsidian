@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1080px;background:#0A0A0A;font-family:'IBM Plex Sans Arabic',sans-serif;color:#fff;position:relative;overflow:hidden}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(245,158,11,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(245,158,11,0.04) 1px,transparent 1px);background-size:54px 54px}
+.glow{position:absolute;width:500px;height:500px;background:radial-gradient(circle,rgba(245,158,11,0.1) 0%,transparent 70%);top:45%;left:60%;transform:translate(-50%,-50%);border-radius:50%}
+.c{position:relative;z-index:2;display:flex;flex-direction:column;height:100%;padding:60px 70px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px}
+.logo{font-size:22px;font-weight:700;letter-spacing:3px;color:rgba(255,255,255,0.35)}.logo span{color:#F59E0B}
+.num{font-size:14px;color:rgba(255,255,255,0.2);direction:ltr}
+.mid{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.emoji{font-size:80px;margin-bottom:30px}
+.h1{font-size:50px;font-weight:700;line-height:1.4;margin-bottom:20px}
+.h1 em{font-style:normal;color:#F59E0B}
+.desc{font-size:24px;color:rgba(255,255,255,0.5);line-height:1.7;max-width:750px;margin-bottom:40px}
+.timeline{display:flex;flex-direction:column;gap:0;width:100%;max-width:600px}
+.tl-item{display:flex;align-items:center;gap:16px;padding:16px 0}
+.tl-dot{width:12px;height:12px;border-radius:50%;background:#F59E0B;flex-shrink:0;box-shadow:0 0 15px rgba(245,158,11,0.4)}
+.tl-dot.red{background:#EF4444;box-shadow:0 0 15px rgba(239,68,68,0.4)}
+.tl-dot.green{background:#10B981;box-shadow:0 0 15px rgba(16,185,129,0.4)}
+.tl-line{width:2px;height:20px;background:rgba(255,255,255,0.1);margin-right:5px}
+.tl-text{font-size:19px;font-weight:600;text-align:right}
+.tl-text span{display:block;font-size:14px;color:rgba(255,255,255,0.35);font-weight:400;margin-top:2px}
+.bot{padding:60px 70px;position:absolute;bottom:0;left:0;right:0}
+.cta-row{display:flex;justify-content:space-between;align-items:center}
+.cta{background:linear-gradient(135deg,#F59E0B,#D97706);padding:16px 36px;border-radius:14px;font-size:20px;font-weight:700;box-shadow:0 0 30px rgba(245,158,11,0.2);color:#0A0A0A}
+.url{font-size:15px;color:rgba(255,255,255,0.25);letter-spacing:1px;direction:ltr}
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="glow"></div>
+<div class="c">
+  <div class="top">
+    <div class="logo">سيل <span>|</span> SAIL</div>
+    <div class="num">03/03</div>
+  </div>
+  <div class="mid">
+    <div class="emoji">💰</div>
+    <div class="h1">فلوسك المتأخرة؟<br><em>الوكيل يحصّلها</em></div>
+    <div class="desc">يتابع الفواتير المتأخرة ويرسل تذكيرات<br>للعملاء تلقائي — بدون ما تحرج نفسك</div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot red"></div>
+        <div class="tl-text">⚠️ ٣ فواتير متأخرة — ١٥,٠٠٠ ر.س<span>كشف تلقائي من النظام</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-text">📩 تم إرسال تذكير لـ شركة النور<span>رسالة واتساب احترافية</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot green"></div>
+        <div class="tl-text">✅ شركة النور سددت ٨,٠٠٠ ر.س<span>تم تحديث الحساب تلقائي</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bot">
+  <div class="cta-row">
+    <div class="cta">جرّب مجاناً</div>
+    <div class="url">sailsolutions.ai</div>
+  </div>
+</div>
+</body>
+</html>

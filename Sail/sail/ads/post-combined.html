@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1080px;background:#0A0A0A;font-family:'IBM Plex Sans Arabic',sans-serif;color:#fff;position:relative;overflow:hidden}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,0.04) 1px,transparent 1px);background-size:54px 54px}
+.glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(59,130,246,0.08) 0%,transparent 70%);top:40%;left:50%;transform:translate(-50%,-50%);border-radius:50%}
+.c{position:relative;z-index:2;display:flex;flex-direction:column;height:100%;padding:50px 60px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.logo{font-size:22px;font-weight:700;letter-spacing:3px;color:rgba(255,255,255,0.35)}.logo span{color:#3B82F6}
+.badge{font-size:14px;color:rgba(255,255,255,0.2);direction:ltr}
+/* Tagline */
+.tagline{text-align:center;margin-bottom:24px}
+.tagline-text{display:inline-block;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.2);padding:10px 28px;border-radius:100px;font-size:17px;font-weight:600;color:#93C5FD}
+/* Headline */
+.h1{font-size:46px;font-weight:700;line-height:1.35;text-align:center;margin-bottom:10px}
+.h1 em{font-style:normal;color:#3B82F6}
+.sub{font-size:20px;color:rgba(255,255,255,0.45);text-align:center;margin-bottom:22px;line-height:1.6}
+/* Time save strip */
+.timesave{display:flex;align-items:center;justify-content:center;gap:20px;margin-bottom:24px}
+.ts-box{text-align:center;padding:14px 24px;border-radius:14px}
+.ts-box.old{background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.12)}
+.ts-box.new{background:rgba(59,130,246,0.08);border:1px solid rgba(59,130,246,0.12)}
+.ts-val{font-size:30px;font-weight:700}
+.old .ts-val{color:#EF4444;text-decoration:line-through;text-decoration-thickness:2px}
+.new .ts-val{color:#3B82F6}
+.ts-lbl{font-size:12px;color:rgba(255,255,255,0.35);margin-top:2px}
+.ts-arrow{font-size:28px;color:rgba(255,255,255,0.15)}
+/* Two features side by side */
+.features{display:flex;gap:16px;margin-bottom:20px}
+.feat{flex:1;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:18px;padding:20px}
+.feat-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.feat-icon{font-size:24px}
+.feat-title{font-size:18px;font-weight:700}
+.feat-title.blue{color:#3B82F6}
+.feat-title.green{color:#10B981}
+/* Chat mockup inside feature */
+.mini-chat{display:flex;flex-direction:column;gap:8px}
+.mm{border-radius:10px;padding:10px 14px;font-size:14px;font-weight:600;width:fit-content;max-width:95%}
+.mm.user{background:rgba(37,211,102,0.12);color:#25D366;align-self:flex-end}
+.mm.bot-blue{background:rgba(59,130,246,0.1);color:#93C5FD;align-self:flex-start}
+.mm.bot-green{background:rgba(16,185,129,0.1);color:#6EE7B7;align-self:flex-start}
+/* Mini stats */
+.mini-stats{display:flex;gap:8px;margin-top:10px}
+.ms{flex:1;text-align:center;background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.1);border-radius:10px;padding:10px 6px}
+.ms-val{font-size:20px;font-weight:700;color:#10B981}
+.ms-lbl{font-size:10px;color:rgba(255,255,255,0.35);margin-top:2px}
+/* Bottom */
+.bot-row{display:flex;align-items:center;justify-content:space-between;padding:0 60px 45px 60px;position:absolute;bottom:0;left:0;right:0}
+.cta{background:linear-gradient(135deg,#3B82F6,#2563EB);padding:16px 36px;border-radius:14px;font-size:20px;font-weight:700;box-shadow:0 0 30px rgba(59,130,246,0.2)}
+.url{font-size:15px;color:rgba(255,255,255,0.25);letter-spacing:1px;direction:ltr}
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="glow"></div>
+<div class="c">
+  <div class="top">
+    <div class="logo">سيل <span>|</span> SAIL</div>
+    <div class="badge">01/02</div>
+  </div>
+  <div class="tagline"><div class="tagline-text">🤖 محاسب بجيبك — بدل ساعات؟ ثواني</div></div>
+  
+  <div class="h1">سجّل فواتيرك واطلب تقاريرك<br><em>من جوالك بثواني</em></div>
+  <div class="sub">وكيل ذكي يشتغل على وافق وقيود — بدون ما تفتح البرنامج</div>
+  
+  <div class="timesave">
+    <div class="ts-box old">
+      <div class="ts-val">ساعات يومياً</div>
+      <div class="ts-lbl">إدخال + تقارير + متابعة</div>
+    </div>
+    <div class="ts-arrow">→</div>
+    <div class="ts-box new">
+      <div class="ts-val">ثواني</div>
+      <div class="ts-lbl">مع وكيل سيل</div>
+    </div>
+  </div>
+  
+  <div class="features">
+    <div class="feat">
+      <div class="feat-head">
+        <div class="feat-icon">📸</div>
+        <div class="feat-title blue">سجّل فاتورة</div>
+      </div>
+      <div class="mini-chat">
+        <div class="mm user">📸 فاتورة مشتريات ١٢٠٠ ريال</div>
+        <div class="mm bot-blue">✅ تم تسجيلها في وافق</div>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-head">
+        <div class="feat-icon">📊</div>
+        <div class="feat-title green">اطلب تقرير</div>
+      </div>
+      <div class="mini-chat">
+        <div class="mm user">كم مبيعات مارس؟</div>
+        <div class="mm bot-green">📊 ٤٢٣K ر.س (+١٨٪)</div>
+      </div>
+      <div class="mini-stats">
+        <div class="ms"><div class="ms-val">٤٢٣K</div><div class="ms-lbl">مبيعات</div></div>
+        <div class="ms"><div class="ms-val">+١٨٪</div><div class="ms-lbl">نمو</div></div>
+        <div class="ms"><div class="ms-val">٩٧٪</div><div class="ms-lbl">تحصيل</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bot-row">
+  <div class="cta">جرّب مجاناً</div>
+  <div class="url">sailsolutions.ai</div>
+</div>
+</body>
+</html>

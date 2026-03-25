@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1080px;font-family:'Tajawal',sans-serif;overflow:hidden;position:relative}
+
+/* Split screen */
+.split{display:flex;width:100%;height:100%}
+.left{width:50%;background:#1a0000;display:flex;flex-direction:column;justify-content:center;padding:50px;position:relative}
+.right{width:50%;background:#001a0d;display:flex;flex-direction:column;justify-content:center;padding:50px;position:relative}
+
+.left::after{content:"❌";position:absolute;top:30px;right:30px;font-size:40px}
+.right::after{content:"✅";position:absolute;top:30px;right:30px;font-size:40px}
+
+.side-label{font-size:20px;color:#666;margin-bottom:20px;text-transform:uppercase;letter-spacing:2px}
+
+.left .headline{font-size:36px;font-weight:800;color:#ef4444;line-height:1.5}
+.right .headline{font-size:36px;font-weight:800;color:#10B981;line-height:1.5}
+
+.list{margin-top:20px;font-size:22px;line-height:2;color:#aaa}
+.list .item{display:flex;align-items:center;gap:10px}
+
+/* Center strip */
+.center-strip{position:absolute;top:0;left:50%;transform:translateX(-50%);width:4px;height:100%;background:linear-gradient(180deg,#ef4444,#333,#10B981);z-index:10}
+
+/* Bottom overlay */
+.bottom-bar{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.95);padding:30px 60px;display:flex;justify-content:space-between;align-items:center;z-index:20}
+.bottom-text{font-size:28px;font-weight:800;color:#fff}
+.bottom-text span{color:#3B82F6}
+.cta-btn{background:#3B82F6;color:#fff;padding:14px 40px;border-radius:50px;font-size:24px;font-weight:700}
+.brand{font-size:18px;color:#555;margin-top:8px;text-align:left}
+.disclaimer{font-size:12px;color:#333;position:absolute;bottom:8px;left:60px;z-index:30}
+</style>
+</head>
+<body>
+<div class="split">
+  <div class="left">
+    <div class="side-label">بدون وكيل ذكي</div>
+    <div class="headline">أنت فتحت مشروعك<br>وصرت...</div>
+    <div class="list">
+      <div class="item">📋 كاتب فواتير</div>
+      <div class="item">🔢 مدخل بيانات</div>
+      <div class="item">📞 محصّل ديون</div>
+      <div class="item">📊 محلل أرقام</div>
+      <div class="item">😩 كل شي إلا رائد أعمال</div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="side-label">مع وكيل Sail</div>
+    <div class="headline">أنت ترجع<br>تسوي اللي بديت عشانه</div>
+    <div class="list">
+      <div class="item">⚡ الفواتير تتسجل تلقائي</div>
+      <div class="item">📊 التقارير تجيك واتساب</div>
+      <div class="item">🔔 التذكيرات ترسل نفسها</div>
+      <div class="item">🧠 القرارات مبنية على بيانات</div>
+      <div class="item">🚀 أنت تبني. الوكيل يشتغل.</div>
+    </div>
+  </div>
+</div>
+<div class="center-strip"></div>
+<div class="bottom-bar">
+  <div>
+    <div class="bottom-text">ما فتحت محل عشان <span>تدخل فواتير</span></div>
+  </div>
+  <div>
+    <div class="cta-btn">جرب مجاناً</div>
+    <div class="brand">sailsolutions.ai</div>
+  </div>
+</div>
+<div class="disclaimer">*بيانات توضيحية | وكيل ذكاء اصطناعي</div>
+</body>
+</html>

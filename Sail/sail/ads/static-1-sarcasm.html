@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1080px;font-family:'Tajawal',sans-serif;background:#0a0a0a;color:#fff;overflow:hidden;position:relative}
+.container{width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:60px}
+
+/* Logo top right */
+.logo{position:absolute;top:40px;left:40px;width:80px;height:80px}
+.logo img{width:100%;filter:invert(1)}
+
+/* Main quote */
+.quote-section{margin-top:80px;text-align:center}
+.quote{font-size:72px;font-weight:900;line-height:1.3;color:#fff}
+.quote em{font-style:normal;color:#3B82F6}
+.attribution{font-size:32px;color:#666;margin-top:20px;font-weight:400}
+
+/* WhatsApp mockup */
+.mockup{background:#0b141a;border-radius:20px;padding:24px;margin:40px auto;max-width:700px;border:1px solid #1a2a35}
+.wa-msg{background:#005c4b;border-radius:12px;padding:14px 18px;margin-bottom:12px;font-size:24px;color:#e9edef;max-width:80%;margin-right:auto}
+.wa-bot{background:#1f2c34;border-radius:12px;padding:14px 18px;font-size:24px;color:#e9edef;max-width:85%}
+.wa-bot .check{color:#25D366}
+
+/* Bottom */
+.bottom{display:flex;justify-content:space-between;align-items:flex-end}
+.cta-area{text-align:right}
+.tagline{font-size:26px;color:#888;margin-bottom:12px}
+.cta-btn{display:inline-block;background:#3B82F6;color:#fff;padding:16px 48px;border-radius:50px;font-size:28px;font-weight:700}
+.brand-url{font-size:20px;color:#555;margin-top:10px}
+.disclaimer{font-size:14px;color:#333;position:absolute;bottom:20px;left:60px}
+
+.benefits{display:flex;gap:20px;margin-top:auto}
+.benefit-badge{background:#111;border:1px solid #222;border-radius:12px;padding:12px 20px;font-size:18px;color:#aaa;text-align:center}
+.benefit-badge .num{font-size:32px;font-weight:800;color:#3B82F6;display:block}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="quote-section">
+    <div class="quote">"أحب أدخل فواتير <em>يدوي</em>"</div>
+    <div class="attribution">— ما أحد قالها. أبداً.</div>
+  </div>
+
+  <div class="mockup">
+    <div class="wa-msg">سجّل الفواتير ذي 📸📸</div>
+    <div class="wa-bot"><span class="check">✅</span> تم تسجيل ٣ فواتير — ١١٬٨٣٠ ر.س شامل الضريبة</div>
+  </div>
+
+  <div class="benefits">
+    <div class="benefit-badge"><span class="num">٣٠</span>دقيقة توفرها لكل فاتورة</div>
+    <div class="benefit-badge"><span class="num">٢٤/٧</span>يشتغل بدون إجازات</div>
+    <div class="benefit-badge"><span class="num">٠٪</span>أخطاء بشرية</div>
+  </div>
+
+  <div class="bottom">
+    <div class="cta-area">
+      <div class="tagline">وكيل محاسبة ذكي — على واتساب</div>
+      <div class="cta-btn">جرب مجاناً</div>
+      <div class="brand-url">sailsolutions.ai</div>
+    </div>
+  </div>
+</div>
+<div class="disclaimer">*بيانات توضيحية | وكيل ذكاء اصطناعي</div>
+</body>
+</html>

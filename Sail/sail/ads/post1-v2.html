@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1080px;background:#0A0A0A;font-family:'IBM Plex Sans Arabic',sans-serif;color:#fff;position:relative;overflow:hidden}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(59,130,246,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,0.04) 1px,transparent 1px);background-size:54px 54px}
+.glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(59,130,246,0.1) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%}
+.c{position:relative;z-index:2;display:flex;flex-direction:column;height:100%;padding:60px 70px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}
+.logo{font-size:22px;font-weight:700;letter-spacing:3px;color:rgba(255,255,255,0.35)}.logo span{color:#3B82F6}
+.num{font-size:14px;color:rgba(255,255,255,0.2);direction:ltr}
+/* Tagline bar */
+.tagline{text-align:center;margin-bottom:35px}
+.tagline-text{display:inline-block;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.2);padding:10px 28px;border-radius:100px;font-size:18px;font-weight:600;color:#93C5FD;letter-spacing:1px}
+.mid{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.h1{font-size:52px;font-weight:700;line-height:1.4;margin-bottom:16px}
+.h1 em{font-style:normal;color:#3B82F6}
+.desc{font-size:22px;color:rgba(255,255,255,0.5);line-height:1.7;max-width:700px;margin-bottom:35px}
+/* Time comparison */
+.compare{display:flex;align-items:center;gap:30px;margin-bottom:35px}
+.compare-box{text-align:center;padding:20px 30px;border-radius:16px}
+.compare-box.old{background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.15)}
+.compare-box.new{background:rgba(59,130,246,0.08);border:1px solid rgba(59,130,246,0.15)}
+.compare-val{font-size:40px;font-weight:700}
+.old .compare-val{color:#EF4444;text-decoration:line-through;text-decoration-thickness:3px}
+.new .compare-val{color:#3B82F6}
+.compare-lbl{font-size:14px;color:rgba(255,255,255,0.4);margin-top:4px}
+.compare-arrow{font-size:36px;color:rgba(255,255,255,0.2)}
+/* Chat mockup */
+.mockup{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:20px 24px;display:flex;flex-direction:column;gap:10px;max-width:550px;width:100%}
+.msg{border-radius:12px;padding:12px 18px;font-size:17px;font-weight:600;width:fit-content;max-width:85%}
+.msg.user{background:rgba(37,211,102,0.15);color:#25D366;align-self:flex-end}
+.msg.bot{background:rgba(59,130,246,0.12);color:#93C5FD;align-self:flex-start}
+.bot-row{display:flex;align-items:center;gap:60px;padding:50px 70px;position:absolute;bottom:0;left:0;right:0}
+.cta{background:linear-gradient(135deg,#3B82F6,#2563EB);padding:16px 36px;border-radius:14px;font-size:20px;font-weight:700;box-shadow:0 0 30px rgba(59,130,246,0.2);white-space:nowrap}
+.url{font-size:15px;color:rgba(255,255,255,0.25);letter-spacing:1px;direction:ltr}
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="glow"></div>
+<div class="c">
+  <div class="top">
+    <div class="logo">سيل <span>|</span> SAIL</div>
+    <div class="num">01/03</div>
+  </div>
+  <div class="tagline"><div class="tagline-text">🤖 محاسب بجيبك — بدل ساعات؟ ثواني</div></div>
+  <div class="mid">
+    <div class="h1">صوّر الفاتورة<br><em>وخلّ الباقي علينا</em></div>
+    <div class="desc">ارسل صورة أو رسالة واتساب<br>والوكيل يسجلها بثواني في وافق أو قيود</div>
+    <div class="compare">
+      <div class="compare-box old">
+        <div class="compare-val">٤٥ دقيقة</div>
+        <div class="compare-lbl">الطريقة القديمة</div>
+      </div>
+      <div class="compare-arrow">→</div>
+      <div class="compare-box new">
+        <div class="compare-val">١٠ ثواني</div>
+        <div class="compare-lbl">مع وكيل سيل</div>
+      </div>
+    </div>
+    <div class="mockup">
+      <div class="msg user">📸 فاتورة مشتريات ١٢٠٠ ريال</div>
+      <div class="msg bot">✅ تم تسجيلها — مشتريات ١٬٢٠٠ ر.س في وافق</div>
+    </div>
+  </div>
+</div>
+<div class="bot-row">
+  <div class="cta">جرّب مجاناً</div>
+  <div class="url">sailsolutions.ai</div>
+</div>
+</body>
+</html>

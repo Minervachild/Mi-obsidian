@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    width: 1080px;
+    height: 1350px;
+    font-family: 'Tajawal', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  /* Header */
+  .headline {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .headline span {
+    color: #3B82F6;
+  }
+  .subheadline {
+    font-size: 28px;
+    color: #888;
+    margin-bottom: 40px;
+  }
+
+  /* WhatsApp Chat */
+  .whatsapp-chat {
+    background: #0b141a;
+    border-radius: 24px;
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #1a2a35;
+    position: relative;
+  }
+
+  .wa-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1a2a35;
+    margin-bottom: 10px;
+  }
+  .wa-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3B82F6, #1d4ed8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+  }
+  .wa-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #e9edef;
+  }
+  .wa-status {
+    font-size: 15px;
+    color: #25D366;
+  }
+
+  /* Messages */
+  .msg {
+    max-width: 85%;
+    padding: 16px 20px;
+    border-radius: 16px;
+    font-size: 22px;
+    line-height: 1.6;
+    position: relative;
+  }
+  .msg .time {
+    font-size: 13px;
+    color: #667781;
+    text-align: left;
+    margin-top: 6px;
+  }
+  
+  .msg-user {
+    background: #005c4b;
+    align-self: flex-end;
+    border-top-left-radius: 4px;
+    color: #e9edef;
+  }
+  
+  .msg-bot {
+    background: #1f2c34;
+    align-self: flex-start;
+    border-top-right-radius: 4px;
+    color: #e9edef;
+  }
+  .msg-bot .check {
+    color: #25D366;
+    font-weight: 700;
+  }
+  .msg-bot .label {
+    color: #667781;
+    font-size: 18px;
+  }
+  .msg-bot .number {
+    color: #3B82F6;
+    font-weight: 700;
+    font-size: 26px;
+  }
+  .msg-bot .detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #2a3942;
+    font-size: 20px;
+  }
+  .msg-bot .detail-row:last-child {
+    border-bottom: none;
+  }
+  .msg-bot .summary-box {
+    background: #0b141a;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 12px;
+  }
+  .msg-bot .total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 10px;
+    border-top: 1px solid #3B82F6;
+    margin-top: 8px;
+  }
+
+  .chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .tagline {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  .tagline-sub {
+    font-size: 22px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: #3B82F6;
+    color: #fff;
+    padding: 18px 60px;
+    border-radius: 50px;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Tajawal', sans-serif;
+  }
+  .brand {
+    margin-top: 16px;
+    font-size: 20px;
+    color: #555;
+  }
+  .disclaimer {
+    font-size: 14px;
+    color: #444;
+    margin-top: 12px;
+  }
+
+  .emoji { font-style: normal; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="headline">محاسبك الذكي —<br><span>على واتساب</span></div>
+  <div class="subheadline">سجّل، تابع، واستلم تقاريرك بكلمة</div>
+
+  <div class="whatsapp-chat">
+    <div class="wa-header">
+      <div class="wa-avatar">⚓</div>
+      <div>
+        <div class="wa-name">Sail — وكيل المحاسبة</div>
+        <div class="wa-status">● متصل الآن</div>
+      </div>
+    </div>
+
+    <div class="chat-messages">
+
+      <!-- User message 1 -->
+      <div class="msg msg-user">
+        بالله سجّل الفواتير ذي كلها 📸📸📸
+        <div class="time">٩:١٤ ص ✓✓</div>
+      </div>
+
+      <!-- Bot response 1 -->
+      <div class="msg msg-bot">
+        <span class="check">✅</span> تم تسجيل ٣ فواتير في وافق:
+        <div class="summary-box">
+          <div class="detail-row">
+            <span>مكتب النور — قرطاسية</span>
+            <span>١٬١٨٠ ر.س</span>
+          </div>
+          <div class="detail-row">
+            <span>مؤسسة الرياض — صيانة</span>
+            <span>٣٬٤٥٠ ر.س</span>
+          </div>
+          <div class="detail-row">
+            <span>شركة المسار — توريد</span>
+            <span>٧٬٢٠٠ ر.س</span>
+          </div>
+          <div class="total-row">
+            <span>الإجمالي شامل الضريبة</span>
+            <span class="number">١١٬٨٣٠ ر.س</span>
+          </div>
+        </div>
+        <div style="margin-top: 10px;">أمر، تبي أسجّل فواتير زيادة؟ 📎</div>
+        <div class="time">٩:١٤ ص</div>
+      </div>
+
+      <!-- User message 2 -->
+      <div class="msg msg-user">
+        لا كذا تمام. أرسلي تقرير مبيعات الشهر
+        <div class="time">٩:١٥ ص ✓✓</div>
+      </div>
+
+      <!-- Bot response 2 -->
+      <div class="msg msg-bot">
+        <span class="check">📊</span> تقرير مبيعات مارس ٢٠٢٦:
+        <div class="summary-box">
+          <div class="detail-row">
+            <span class="label">إجمالي المبيعات</span>
+            <span class="number">٣٨٢٬٥٠٠ ر.س</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">عدد الفواتير</span>
+            <span>١٤٧ فاتورة</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">النمو عن الشهر الماضي</span>
+            <span style="color: #25D366;">+١٤٪ ↑</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">أعلى عميل</span>
+            <span>مطعم الريف (٦٢K)</span>
+          </div>
+        </div>
+        <div class="time">٩:١٥ ص</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <div class="tagline">وكيل محاسبة يفهمك — ويشتغل ٢٤/٧</div>
+    <div class="tagline-sub">يربط مع وافق وقيود</div>
+    <div class="cta-btn">جرب مجاناً</div>
+    <div class="brand">sailsolutions.ai</div>
+    <div class="disclaimer">*بيانات توضيحية | وكيل ذكاء اصطناعي</div>
+  </div>
+
+</div>
+</body>
+</html>
