@@ -1,0 +1,614 @@
+{
+  "fund": {
+    "name": "M's Investment Fund",
+    "currency": "SAR",
+    "inception_date": "2026-01-06",
+    "unit_start_price": 1.0,
+    "last_updated": "2026-03-25",
+    "broker_snapshot_date": "2026-03-25"
+  },
+  "investors": [
+    {
+      "id": "investor_1",
+      "label": "M (Manager)",
+      "units": 13615.2013,
+      "avg_unit_price": 0.974,
+      "deposits": [
+        {
+          "date": "2026-01-06",
+          "amount": 3000.0
+        },
+        {
+          "date": "2026-01-09",
+          "amount": 1000.0
+        },
+        {
+          "date": "2026-01-11",
+          "amount": 4635.84
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 1600.0
+        },
+        {
+          "date": "2026-03-08",
+          "amount": 1524.42
+        },
+        {
+          "date": "2026-03-25",
+          "amount": 1500.0
+        }
+      ],
+      "total_deposited": 13260.26
+    },
+    {
+      "id": "investor_2",
+      "label": "Client (Investor 2)",
+      "units": 8721.8462,
+      "avg_unit_price": 0.917237,
+      "deposits": [
+        {
+          "date": "2026-02-09",
+          "amount": 8000.0
+        }
+      ],
+      "total_deposited": 8000.0
+    }
+  ],
+  "total_units": 22337.0475,
+  "total_deposited": 21260.26,
+  "valuation": {
+    "as_of": "2026-03-25",
+    "prices_as_of": "2026-03-24 close (US) / 2026-03-25 (9410)",
+    "cash_balance": 3480.25,
+    "us_stocks_value_usd": 4270.44,
+    "usd_sar_rate": 3.7541,
+    "us_stocks_value_sar": 16031.52,
+    "saudi_stocks_value_sar": 462.0,
+    "total_investments_sar": 16493.52,
+    "total_nav": 19973.77,
+    "nav_per_unit": 0.894,
+    "stock_prices_usd": {
+      "UBER": 72.34,
+      "FSLR": 194.26,
+      "UMMA": 31.78,
+      "IBIT": 39.28,
+      "REMX": 84.62,
+      "BABA": 125.48,
+      "YOU": 53.53,
+      "COPP": 33.81,
+      "SETM": 31.61,
+      "ACMR": 45.92
+    },
+    "stock_prices_sar": {
+      "9410": 11.55
+    },
+    "investor_breakdown": [
+      {
+        "id": "investor_1",
+        "label": "M (Manager)",
+        "units": 13615.2013,
+        "ownership_pct": 60.96,
+        "current_value": 12171.99,
+        "deposited": 13260.26,
+        "pnl": -1088.27,
+        "pnl_pct": -8.21
+      },
+      {
+        "id": "investor_2",
+        "label": "Client (Investor 2)",
+        "units": 8721.8462,
+        "ownership_pct": 39.04,
+        "current_value": 7801.33,
+        "deposited": 8000.0,
+        "pnl": -198.67,
+        "pnl_pct": -2.48
+      }
+    ]
+  },
+  "buys": [
+    {
+      "date": "2026-01-06",
+      "ticker": "YOU",
+      "shares": 2,
+      "cost": 267.3
+    },
+    {
+      "date": "2026-01-06",
+      "ticker": "UBER",
+      "shares": 2,
+      "cost": 636.78
+    },
+    {
+      "date": "2026-01-07",
+      "ticker": "FSLR",
+      "shares": 0.5,
+      "cost": 452.43
+    },
+    {
+      "date": "2026-01-09",
+      "ticker": "FSLR",
+      "shares": 0.5,
+      "cost": 454.27
+    },
+    {
+      "date": "2026-01-09",
+      "ticker": "UBER",
+      "shares": 2,
+      "cost": 642.93
+    },
+    {
+      "date": "2026-01-12",
+      "ticker": "YOU",
+      "shares": 2,
+      "cost": 265.95
+    },
+    {
+      "date": "2026-01-12",
+      "ticker": "UMMA",
+      "shares": 2,
+      "cost": 235.87
+    },
+    {
+      "date": "2026-01-12",
+      "ticker": "UBER",
+      "shares": 3,
+      "cost": 961.2
+    },
+    {
+      "date": "2026-01-13",
+      "ticker": "YOU",
+      "shares": 3,
+      "cost": 385.2
+    },
+    {
+      "date": "2026-01-15",
+      "ticker": "YOU",
+      "shares": 3,
+      "cost": 383.4
+    },
+    {
+      "date": "2026-01-15",
+      "ticker": "UBER",
+      "shares": 3,
+      "cost": 942.07
+    },
+    {
+      "date": "2026-01-28",
+      "ticker": "COPP",
+      "shares": 1,
+      "cost": 159.45
+    },
+    {
+      "date": "2026-01-28",
+      "ticker": "REMX",
+      "shares": 1,
+      "cost": 361.16
+    },
+    {
+      "date": "2026-01-28",
+      "ticker": "SETM",
+      "shares": 2,
+      "cost": 291.52
+    },
+    {
+      "date": "2026-01-28",
+      "ticker": "UBER",
+      "shares": 2,
+      "cost": 604.95
+    },
+    {
+      "date": "2026-01-28",
+      "ticker": "YOU",
+      "shares": 2,
+      "cost": 258.48
+    },
+    {
+      "date": "2026-01-28",
+      "ticker": "UMMA",
+      "shares": 2,
+      "cost": 243.41
+    },
+    {
+      "date": "2026-01-28",
+      "ticker": "BABA",
+      "shares": 1,
+      "cost": 657.82
+    },
+    {
+      "date": "2026-01-29",
+      "ticker": "9410",
+      "shares": 10,
+      "cost": 124.3,
+      "fees": {
+        "cma": 0.03,
+        "tadawul": 0.02,
+        "vat": 0.0
+      }
+    },
+    {
+      "date": "2026-01-30",
+      "ticker": "IBIT",
+      "shares": 5,
+      "cost": 878.62
+    },
+    {
+      "date": "2026-01-30",
+      "ticker": "REMX",
+      "shares": 2,
+      "cost": 654.18
+    },
+    {
+      "date": "2026-02-03",
+      "ticker": "IBIT",
+      "shares": 2,
+      "cost": 316.98
+    },
+    {
+      "date": "2026-02-09",
+      "ticker": "UMMA",
+      "shares": 5,
+      "cost": 620.06
+    },
+    {
+      "date": "2026-02-09",
+      "ticker": "UBER",
+      "shares": 3,
+      "cost": 833.06
+    },
+    {
+      "date": "2026-02-09",
+      "ticker": "REMX",
+      "shares": 1.5,
+      "cost": 497.73
+    },
+    {
+      "date": "2026-02-09",
+      "ticker": "COPP",
+      "shares": 2,
+      "cost": 313.8
+    },
+    {
+      "date": "2026-02-09",
+      "ticker": "BABA",
+      "shares": 1,
+      "cost": 612.22
+    },
+    {
+      "date": "2026-02-09",
+      "ticker": "IBIT",
+      "shares": 6,
+      "cost": 902.92
+    },
+    {
+      "date": "2026-02-17",
+      "ticker": "UMMA",
+      "shares": 3,
+      "cost": 375.63
+    },
+    {
+      "date": "2026-02-18",
+      "ticker": "UBER",
+      "shares": 2.5,
+      "cost": 680.43
+    },
+    {
+      "date": "2026-02-24",
+      "ticker": "FSLR",
+      "shares": 1,
+      "cost": 907.5
+    },
+    {
+      "date": "2026-02-24",
+      "ticker": "UMMA",
+      "shares": 5,
+      "cost": 647.43
+    },
+    {
+      "date": "2026-02-25",
+      "ticker": "FSLR",
+      "shares": 0.5,
+      "cost": 393.37
+    },
+    {
+      "date": "2026-03-02",
+      "ticker": "UMMA",
+      "shares": 6,
+      "cost": 761.06
+    },
+    {
+      "date": "2026-03-02",
+      "ticker": "BABA",
+      "shares": 1,
+      "cost": 529.65
+    },
+    {
+      "date": "2026-03-04",
+      "ticker": "UMMA",
+      "shares": 3,
+      "cost": 368.55
+    },
+    {
+      "date": "2026-03-05",
+      "ticker": "ACMR",
+      "shares": 1,
+      "cost": 194.43
+    },
+    {
+      "date": "2026-03-08",
+      "ticker": "9410",
+      "shares": 30,
+      "cost": 349.98,
+      "price_per_share": 11.66,
+      "commission": 0.17,
+      "vat": 0.01,
+      "note": "Al Bilad Hong Kong ETF"
+    }
+  ],
+  "sells": [
+    {
+      "date": "2026-03-02",
+      "ticker": "YOU",
+      "shares": 4,
+      "proceeds": 714.15
+    },
+    {
+      "date": "2026-03-13",
+      "ticker": "YOU",
+      "shares": 4,
+      "proceeds": 672.15,
+      "note": "Net proceeds 672.15 SAR (~$179.24 USD, ~$44.81/share)"
+    }
+  ],
+  "holdings": {
+    "UBER": {
+      "shares_bought": 17.5,
+      "shares_sold": 0,
+      "shares_held": 17.5,
+      "total_cost": 5301.42,
+      "market_value_usd": 1265.95,
+      "avg_cost_per_share": 303.0
+    },
+    "YOU": {
+      "shares_bought": 12,
+      "shares_sold": 8,
+      "shares_held": 4,
+      "total_cost": 1560.33,
+      "market_value_usd": 214.12,
+      "avg_cost_per_share": 130.03
+    },
+    "FSLR": {
+      "shares_bought": 2.5,
+      "shares_sold": 0,
+      "shares_held": 2.5,
+      "total_cost": 2207.57,
+      "market_value_usd": 485.65,
+      "avg_cost_per_share": 883.03
+    },
+    "UMMA": {
+      "shares_bought": 26,
+      "shares_sold": 0,
+      "shares_held": 26,
+      "total_cost": 3252.01,
+      "market_value_usd": 826.28,
+      "avg_cost_per_share": 125.08
+    },
+    "IBIT": {
+      "shares_bought": 13,
+      "shares_sold": 0,
+      "shares_held": 13,
+      "total_cost": 2098.52,
+      "market_value_usd": 510.64,
+      "avg_cost_per_share": 161.42
+    },
+    "9410": {
+      "shares_bought": 40,
+      "shares_sold": 0,
+      "shares_held": 40,
+      "total_cost": 474.33,
+      "market_value_sar": 462.0,
+      "avg_cost_per_share": 11.86
+    },
+    "REMX": {
+      "shares_bought": 4.5,
+      "shares_sold": 0,
+      "shares_held": 4.5,
+      "total_cost": 1513.07,
+      "market_value_usd": 380.79,
+      "avg_cost_per_share": 336.24
+    },
+    "COPP": {
+      "shares_bought": 3,
+      "shares_sold": 0,
+      "shares_held": 3,
+      "total_cost": 473.25,
+      "market_value_usd": 101.43,
+      "avg_cost_per_share": 157.75
+    },
+    "BABA": {
+      "shares_bought": 3,
+      "shares_sold": 0,
+      "shares_held": 3,
+      "total_cost": 1799.69,
+      "market_value_usd": 376.44,
+      "avg_cost_per_share": 599.9
+    },
+    "ACMR": {
+      "shares_bought": 1,
+      "shares_sold": 0,
+      "shares_held": 1,
+      "total_cost": 194.43,
+      "market_value_usd": 45.92,
+      "avg_cost_per_share": 194.43
+    },
+    "SETM": {
+      "shares_bought": 2,
+      "shares_sold": 0,
+      "shares_held": 2,
+      "total_cost": 291.52,
+      "market_value_usd": 63.22,
+      "avg_cost_per_share": 145.76
+    }
+  },
+  "allocation": {
+    "by_asset": {
+      "UBER": {
+        "pct": 7.65,
+        "market_value_usd": 1308.83
+      },
+      "UMMA": {
+        "pct": 4.83,
+        "market_value_usd": 826.8
+      },
+      "IBIT": {
+        "pct": 2.94,
+        "market_value_usd": 503.62
+      },
+      "FSLR": {
+        "pct": 2.77,
+        "market_value_usd": 474.45
+      },
+      "REMX": {
+        "pct": 2.46,
+        "market_value_usd": 420.57
+      },
+      "BABA": {
+        "pct": 2.31,
+        "market_value_usd": 395.34
+      },
+      "YOU": {
+        "pct": 2.16,
+        "market_value_usd": 369.28
+      },
+      "COPP": {
+        "pct": 0.66,
+        "market_value_usd": 113.16
+      },
+      "9410": {
+        "pct": 0.67,
+        "market_value_sar": 115.2
+      },
+      "SETM": {
+        "pct": 0.4,
+        "market_value_usd": 68.88
+      },
+      "ACMR": {
+        "pct": 0.27,
+        "market_value_usd": 46.83
+      },
+      "CASH": {
+        "pct": 0.78,
+        "value_sar": 133.67
+      }
+    },
+    "by_market": {
+      "US_equities": {
+        "pct": 16.45,
+        "tickers": [
+          "UBER",
+          "YOU",
+          "FSLR",
+          "ACMR"
+        ],
+        "note": "US-listed, US-focused companies"
+      },
+      "Emerging_Markets": {
+        "pct": 4.83,
+        "tickers": [
+          "UMMA"
+        ],
+        "note": "EM via Islamic world ETF"
+      },
+      "China": {
+        "pct": 2.98,
+        "tickers": [
+          "BABA",
+          "9410"
+        ],
+        "note": "Chinese equities (US-listed + Saudi fund)"
+      },
+      "Digital_Assets": {
+        "pct": 2.94,
+        "tickers": [
+          "IBIT"
+        ],
+        "note": "Bitcoin ETF — global"
+      },
+      "Commodities": {
+        "pct": 3.52,
+        "tickers": [
+          "REMX",
+          "COPP",
+          "SETM"
+        ],
+        "note": "Global commodity/mining ETFs"
+      },
+      "Cash": {
+        "pct": 0.78
+      }
+    },
+    "by_sector": {
+      "Technology_Growth": {
+        "pct": 12.58,
+        "tickers": [
+          "UBER",
+          "YOU",
+          "ACMR"
+        ],
+        "note": "Ride-sharing, identity verification, semiconductors"
+      },
+      "Clean_Energy_Solar": {
+        "pct": 2.77,
+        "tickers": [
+          "FSLR"
+        ],
+        "note": "Solar manufacturing"
+      },
+      "Commodities": {
+        "pct": 3.52,
+        "tickers": [
+          "REMX",
+          "COPP",
+          "SETM"
+        ],
+        "note": "Global commodity/mining ETFs — rare earth, copper, critical materials"
+      },
+      "Digital_Assets_Crypto": {
+        "pct": 2.94,
+        "tickers": [
+          "IBIT"
+        ],
+        "note": "Bitcoin via ETF"
+      },
+      "Emerging_Markets": {
+        "pct": 4.83,
+        "tickers": [
+          "UMMA"
+        ],
+        "note": "Shariah-compliant EM equities"
+      },
+      "China_Ecommerce": {
+        "pct": 2.31,
+        "tickers": [
+          "BABA"
+        ],
+        "note": "Chinese tech/e-commerce"
+      },
+      "China_Fund_Saudi": {
+        "pct": 0.67,
+        "tickers": [
+          "9410"
+        ],
+        "note": "Albilad Hong Kong China fund"
+      },
+      "Cash": {
+        "pct": 0.78
+      }
+    }
+  },
+  "system_notes": {
+    "dual_unit_system": "Portfolio has two unit pools: (1) Portfolio Units — backed by deployed capital, subject to market gains/losses. (2) Cash Units — backed by uninvested deposits, held at par value until deployed. When cash is used to buy stocks, cash units convert to portfolio units at that moment's NAV.",
+    "nav_on_deposit": "When a new deposit arrives, calculate NAV immediately based on current portfolio market value + cash. New investor buys units at that NAV/unit price.",
+    "future_deposits": "Any future deposit triggers: 1) Snapshot current NAV, 2) Calculate unit price, 3) Issue new units to depositor, 4) Update total units outstanding"
+  }
+}
